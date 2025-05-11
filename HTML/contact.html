@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+body{
+ /* padding-top: 250px; */
+  background: url('Hehe.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+ nav ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 100PX;
+      display: flex;
+      justify-content: left;
+      border-bottom: 2px solid #fff;
+      
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      transition: background 0.3s;
+      border: 3px solid #4CAF50;
+      border-radius: 25% 50% 40% 60% / 60% 40% 50% 25%; /* unique blob-like shape */
+    }
+
+    
+.contact form {
+    size: 200px;
+}
+
+
+
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 40px;
+}
+
+.logo{
+  size: 15px;
+}
+  </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+         <li>
+        <a href="index.html" class="home-button">Back to Home</a>
+         </li>
+        </ul>
+    </nav>
+
+  <h2 id="contact form">📬 Contact Me</h2>
+  <form action="https://formsubmit.co/ah232324577@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br><br>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://example.com/thank-you.html">
+
+    <button type="submit">Send</button>
+  </form>
+
+
+  <div class="social-links" style="margin-top: 20px; text-align: center; display: flex; justify-content: center; gap: 10px;">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/yourusername" target="_blank" class="logo">
+    <img src="Instagram logo.jpg" alt="Instagram" />
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/923001234567" target="_blank" class="logo">
+    <img src="Final Whatsapp logo.png" alt="WhatsApp"  style="color: #7bd229 ;"/>
+  </a>
+
+  <!-- Discord -->
+  <!-- <a href="https://discord.com/users/yourdiscordid" target="_blank">
+    <img src="https://img.icons8.com/ios/16/4CAF50/discord-logo--v1.png" alt="Discord" />
+  </a>
+</div> -->
+
+  
+   <script>
+    const text = "Thanks for reaching out! I'll get back to you soon. 😊";
+    let index = 0;
+    function type() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 50);
+      }
+    }
+    setTimeout(type, 1000);
+  </script>
+</body>
+</html>

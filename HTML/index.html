@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Muhammad Ahmed | Portfolio</title>
+  <link rel="icon" type="image/png" href="photo.jpg.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+      padding: 0;
+      background: url('Hehe.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    nav ul {
+      list-style: none;
+      /* background-color: #45a049; */
+      margin: 0;
+      padding-left: 100PX;
+      display: flex;
+      justify-content: left;
+      border-bottom: 2px solid #fff;
+      
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #45a049;
+      font-weight: bold;
+      transition: background 0.3s;
+      border: 3px solid #4CAF50;
+      border-radius: 25% 50% 40% 60% / 60% 40% 50% 25%; /* unique blob-like shape */
+
+    }
+
+    /* nav ul li a:hover {
+      background-color: #45a049;
+    } */
+
+   h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    h1{
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    .H3 {
+      text-align: center;
+      max-width: 700px;
+      margin: 20px auto;
+      color: #555;
+      font-size: 18px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 25% 50% 40% 60% / 60% 40% 50% 25%; /* unique blob-like shape */
+      border: 3px solid #4CAF50;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 2px solid #4CAF50;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: default;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      background-color: #eaffea;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      border: 2px solid #4CAF50;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 10px;
+      color: #888;
+    }
+
+    .typing-box {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="music.html">Music</a></li>
+
+      <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+
+
+    </ul>
+  </nav>
+
+  <h1>Welcome!</h1>
+
+  <h3 class="H3">Hi! I'm Muhammad Ahmed, a 14-year-old tech enthusiast. I'm in 9th grade and passionate about computers, coding, and gaming. I love experimenting with new programming languages and designing websites. My dream is to build a powerful gaming PC and dive deeper into game development!</h3>
+
+  <img src="photo.jpg.png" alt="MY PIC" />
+<br>
+<br>
+<br>
+  <!-- Goals Section -->
+  <h2 id="goals">🎯 My Goals</h2>
+  <div class="card-container">
+    <div class="card">💻 Master Web Development</div>
+    <div class="card">🎮 Build My Own Game</div>
+    <div class="card">🖥️ Buy a Gaming PC</div>
+    <div class="card">📚 Score 90+ in Exams</div>
+    <div class="card">🚀 Learn AI & Machine Learning</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- Favorite Games Section -->
+  <h2 id="games">🎮 My Most Favorite Games</h2>
+  <div class="card-container">
+    <div class="card">🟫 Minecraft</div>
+    <div class="card">🔫 PUBG Mobile</div>
+    <div class="card">🏎️ Forza Horizon 5</div>
+    <div class="card">🚗 Asphalt 9</div>
+    <div class="card">🕹️ GTA V </div>
+    <div class="card">🏁 NFS Most Wanted</div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+  <footer>&copy; 2025 Muhammad Ahmed | All rights reserved</footer>
+
+  <script>
+    const text = "Thanks for reaching out! I'll get back to you soon. 😊";
+    let index = 0;
+    function type() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 50);
+      }
+    }
+    setTimeout(type, 1000);
+  </script>
+</body>
+</html>
